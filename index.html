@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Hand-Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <center>
+    <h3 class="btn btn-info heading"> ~GESTURE WEB APP~
+        <br>
+  <span>&#9994;</span>
+  <span>&#9996;</span>
+  <span>&#128076;</span>
+  <span>&#128077;</span>
+ <br>
+</h3> 
+
+
+<p style="font-size: 30px;">Take Your Selfie To Generate Hand Gesture
+    <br>
+    <span>&#9994;</span>
+    <span>&#9996;</span>
+    <span>&#128076;</span>
+    <span>&#128077;</span>
+</p>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+<label>Webcam View - </label>
+<div id="Camera"></div>
+        <br><br>
+<button onclick="take_snapshot()"  id="btn2" class="btn btn-success">Take Selfie</button>
+      </div>
+    </div>
+
+      
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <div id="Picture"></div>
+      </div>
+      <br>
+      <br>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      <div id="hand-gesture-img"></div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>Snapshot - </label>
+<div id="Result"></div>
+   <br>     
+<button onclick="check()" id="btn1" class="btn btn-success">~Prediction Of Hand-Gesture~</button>
+      
+</div>
+    </div>
+</span>
+
+    </center>
+
+  </body>
+
+  </html>
